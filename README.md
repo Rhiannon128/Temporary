@@ -1,13 +1,11 @@
-Sorry the website is pretty bad; I'll keep updating it whenever I have ideas.
+Place your MP4 file in this folder and name it `hero.mp4` so that the path becomes `assets/hero.mp4`.
 
+Or change the video source in the `index.html` file (the `<video>` element) to a different path if you want to use a different name.
 
-Letakkan file MP4 Anda di folder ini dengan nama `hero.mp4` sehingga path menjadi `assets/hero.mp4`.
+Vital Records:
+- If the video is sourced from another server (external URL), the browser may block pixel reading (sampling) due to CORS. For the color to change automatically, the video must be hosted on the same domain or serve CORS headers that allow reading.
 
-Atau ubah sumber video di file `index.html` (elemen `<video>`) ke path lain jika Anda ingin menggunakan nama berbeda.
-
-Catatan penting:
-- Jika video diambil dari server lain (URL eksternal), browser dapat memblokir pembacaan pixel (sampling) karena CORS. Untuk agar warna otomatis berubah, video harus di-host di domain yang sama atau melayani header CORS yang mengizinkan pembacaan.
-- Untuk pengujian lokal cepat, jalankan server HTTP sederhana di folder proyek:
+- For quick local testing, run a simple HTTP server in the project folder:
 
 ```bash
 # Python 3
@@ -16,4 +14,7 @@ python -m http.server 8000
 # lalu buka http://localhost:8000/ di browser
 ```
 
-- Jika file terlalu besar, pertimbangkan untuk meng-encode ulang dengan bitrate lebih rendah untuk mempercepat loading.
+- If the file is too large, consider re-encoding it at a lower bitrate to speed up loading.
+
+
+Sorry the website is pretty bad; I'll keep updating it whenever I have ideas.
