@@ -1,3 +1,6 @@
+Sorry the website is pretty bad; I'll keep updating it whenever I have ideas.
+
+
 Letakkan file MP4 Anda di folder ini dengan nama `hero.mp4` sehingga path menjadi `assets/hero.mp4`.
 
 Atau ubah sumber video di file `index.html` (elemen `<video>`) ke path lain jika Anda ingin menggunakan nama berbeda.
