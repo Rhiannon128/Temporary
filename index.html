@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rhiannon Auditore - St. Pavlov Foundation</title>
+<meta name="description" content="Personal sandbox diorama">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== BOOT SEQUENCE ========== -->
+<div class="boot" id="boot">
+  <div class="boot-corner tl"></div>
+  <div class="boot-corner tr"></div>
+  <div class="boot-corner bl"></div>
+  <div class="boot-corner br"></div>
+
+  <div class="boot-hud">
+    <span class="boot-side-label mono">ST. PAVLOV OS</span>
+    <span class="boot-side-label mono">STATUS: BETA VERSION</span>
+  </div>
+
+  <div class="boot-panel">
+    <p class="boot-kicker mono">Welcome To</p>
+    <div class="boot-heading">
+      <strong>St. Pavlov Foundation</strong>
+      <span class="boot-subtitle mono">Rhiannon Auditore</span>
+    </div>
+    <div class="boot-track"><i id="boot-bar"></i></div>
+    <div class="boot-readout">
+      <span id="boot-status">LINKING RENDERER</span>
+      <output id="boot-value">0%</output>
+    </div>
+  </div>
+  <p class="boot-coord">N25.165 · E121.553</p>
+</div>
+
+<!-- ========== MAIN PAGE ========== -->
+<div class="page" id="page">
+
+  <header class="topbar">
+    <nav class="topnav">
+      <a href="#about">01 ABOUT</a>
+      <a href="#project">02 PROJECT</a>
+      <a href="#contact">03 CONTACT</a>
+      <span class="clock" id="clock">--:--:--</span>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / SANDBOX -->
+    <section id="sandbox" class="sandbox">
+      <video class="hero-video" autoplay loop muted playsinline preload="metadata">
+        <source src="assets/hero.webm" type="video/webm">
+        Browser Anda tidak mendukung playback video WebM.
+      </video>
+      <div class="video-overlay"></div>
+      <div id="scene" class="scene"></div>
+      <div class="frame">
+        <i class="c tl"></i><i class="c tr"></i>
+        <i class="c bl"></i><i class="c br"></i>
+      </div>
+
+      <div class="masthead">
+        <p class="mini"><span>Rhiannon Auditore</span><i></i><span>St. Pavlov Foundation</span></p>
+        <h1 class="wordmark">Welcome</h1>
+        <p class="role"><span>Vibe Coder</span><i class="sep"></i><span>Florence</span></p>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        
+        <svg viewBox="0 0 24 32">
+          <path class="cue-shaft" d="M12 2V25"/>
+          <path class="cue-head" d="M5.5 18.5L12 25L18.5 18.5"/>
+        </svg>
+      </a>
+
+      <div class="legend">
+        <span><i class="dot on"></i>ONLINE</span>
+        <span><i class="dot off"></i>OFFLINE</span>
+      </div>
+      <div class="coord" id="coord">S3.442 · E114.829</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="sec-head">
+        <span class="sec-idx">01</span>
+        <span class="sec-name">ABOUT</span>
+        <span class="sec-line"></span>
+      </div>
+      <div class="about-grid">
+        <div class="about-quote">
+          <p class="quote-en">"The wind carries no heavy sigh,<br>for the Maker sits near to share the grief."</p>
+          <span class="quote-sub mono">"THE MAKER’S SIGH"</span>
+        </div>
+        <div class="about-body">
+          <div class="dossier-tag mono">Information:</div>
+          <p class="lede">Student from SMK Telkom Banjarbaru, South Borneo, Indonesia.</p>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project" class="section archive">
+      <div class="sec-head">
+        <span class="sec-idx">02</span>
+        <span class="sec-name">PROJECT</span>
+        <span class="sec-line"></span>
+      </div>
+      <div class="archive-grid" id="archive-grid"></div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact" class="section contact">
+      <div class="sec-head">
+        <span class="sec-idx">03</span>
+        <span class="sec-name">CONTACT US</span>
+        <span class="sec-line"></span>
+      </div>
+
+      <div class="contact-wrap">
+        <p class="contact-intro">Available for creative collaborations and digital projects.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card discord" href="https://discord.com/users/1176462042178269234" target="_blank" rel="noopener">
+            <picture class="logo-picture">
+              <source srcset="assets/logo-discord.webp" type="image/webp">
+              <source srcset="assets/logo-discord.png" type="image/png">
+              <source srcset="assets/logo-discord.jpg" type="image/jpeg">
+              <img class="app-logo" src="assets/logo-discord.png" alt="Discord logo">
+            </picture>
+            <strong>Discord</strong>
+          </a>
+
+          <a class="contact-card github" href="https://github.com/Rhiannon128" target="_blank" rel="noopener">
+            <picture class="logo-picture">
+              <source srcset="assets/logo-github.webp" type="image/webp">
+              <source srcset="assets/logo-github.png" type="image/png">
+              <source srcset="assets/logo-github.jpg" type="image/jpeg">
+              <img class="app-logo" src="assets/logo-github.png" alt="GitHub logo">
+            </picture>
+            <strong>Github</strong>
+          </a>
+
+          <a class="contact-card spotify" href="https://open.spotify.com/user/3152afkjssdtimdgqzgfgasxmzze?si=04e5af3a262e4efd" target="_blank" rel="noopener">
+            <picture class="logo-picture">
+              <source srcset="assets/logo-spotify.png" type="image/png">
+              <source srcset="assets/logo-spotify.jpg" type="image/jpeg">
+              <img class="app-logo" src="assets/logo-spotify.png" alt="Spotify logo">
+            </picture>
+            <strong>Spotify</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <span>© 2026 Rhiannon Auditore</span>
+    </div>
+
+    <div class="footer-center mono">
+      <span></span>Pa Gur Yv Y Porthaur?</span>
+    </div>
+
+    <div class="footer-right">
+      <a href="https://github.com/Rhiannon128" target="_blank" rel="noopener">GITHUB ↗</a>
+      
+    </div>
+  </footer>
+</div>
+
+<!-- CARD MODAL -->
+<button class="card-backdrop" id="card-backdrop" type="button" tabindex="-1"></button>
+<aside class="card" id="card" aria-hidden="true">
+  <div class="card-inner" id="card-inner"></div>
+</aside>
+
+<!-- Three.js -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+
+<script src="js/project.js"></script>
+<script src="js/site.js"></script>
+<script src="js/sandbox.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
